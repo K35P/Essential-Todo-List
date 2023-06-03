@@ -2,15 +2,33 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Todo List Minimal</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <h1>Minimal Todo List</h1>
+    <div id="pomodoro-timer">
+        <div>
+          <label for="pomodoro-duration">Durata pomodoro:</label>
+          <input type="number" id="pomodoro-duration" value="25" min="1" max="120" class="bg-transparent p-0 m-0 my-2 rounded-5 border-1 border-dark text-white text-center ">
+          <span>minuti</span>
+        </div>
+        <div>
+          <label for="break-duration">Durata pausa:</label>
+          <input type="number" id="break-duration" value="5" min="1" max="60" class="bg-transparent p-0 m-0 my-2 rounded-5 border-1 border-dark text-white text-center ">
+          <span>minuti</span>
+        </div>
+        <div id="time-display">25:00</div>
+        <button id="start-button">Avvia</button>
+        <button id="reset-button">Reset</button>
+      </div>
     <ul id="todo-list"></ul>
-    <input type="text" id="new-todo" placeholder="Aggiungi un nuovo compito">
+    <input type="text" id="new-todo" placeholder="Aggiungi un nuovo compito" class="mx-auto text-center rounded-5">
     <button id="add-todo">Aggiungi</button>
-    <button class="delete-todo">Elimina</button>
+
     <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
   </body>
 </html>
