@@ -1,0 +1,76 @@
+body {
+    background-color: #292929;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    background-color: #3b3b3b;
+    color: #fff;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #todo-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+  }
+  
+  #todo-list li {
+    border-bottom: 1px solid #555;
+    padding: 10px;
+  }
+  
+  #todo-list li:last-child {
+    border-bottom: none;
+  }
+  
+  #new-todo {
+    background-color: #3b3b3b;
+    border: none;
+    border-bottom: 1px solid #555;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    width: calc(100% - 130px);
+  }
+  
+  #add-todo {
+    background-color: #6f42c1;
+    border: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px;
+    width: 100px;
+    border-radius: 30px;
+  }
+  
+  #add-todo:hover {
+    cursor: pointer;
+    background-color: #5a32a3;
+  }
+  
+  #add-todo:active {
+    background-color: #5a32a3;
+    box-shadow: none;
+    transform: translateY(1px);
+  }
+  
+  .delete-todo {
+    background-color: #3b3b3b;
+    border: none;
+    color: #fff;
+    font-size: 12px;
+    padding: 6px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 10px;
+  }
+  
+  .delete-todo:hover {
+    background-color: #6f42c1;
+  }
